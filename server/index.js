@@ -8,7 +8,7 @@ app.use(logger("dev"))
 app.use(express.static('client'))
 
 app.get('', (req, res) => {
-  app.use(express.static(path.join(process.cwd(), 'public')))
+  app.use(express.static(path.join(process.cwd(), './client/index.html')))
 })
 
 app.listen(port, () => {
